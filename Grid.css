@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    color: rgb(253, 250, 250);
+    background-color: rgb(165, 214, 240);
+    font-family: sans-serif;
+  }
+  /*  After class */
+  .grid-bg {
+    background-color: #101111;
+    background-image: linear-gradient(
+        rgba(255, 255, 255, 0.05) 1px,
+        transparent 1px
+      ),
+      linear-gradient(90deg, rgba(64, 1, 210, 0.05) 1px, transparent 1px);
+    background-size: 20px 20px;
+    min-height: 100vh;
+    padding: 2rem;
+  }
+  
+  /* Header */
+  .main-header {
+    font-size: 2.5rem;
+  }
+  
+  /* Main nav */
+  .main-nav {
+    color: black;
+    background-color: aliceblue;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    margin: auto;
+    gap: 1rem;
+    border-radius: 8x;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .nav-item {
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(15, 14, 14);
+    border: #1a1a1a;
+  }
+  .nav-item:hover {
+    background-color: rgb(62, 198, 175);
+    color: white;
+  }
+  /* Main */
+  .all-section {
+    padding: 2rem;
+    gap: 8px;
+    display: grid;
+  }
+  
+  /* 1 */
+  .section-one {
+    background-color: #283336;
+    color: rgb(246, 245, 245);
+    padding: 2rem;
+    border-radius: 4px;
+  }
+  /* 2 */
+  .section-two {
+    background-color: aliceblue;
+    color: black;
+    padding: 2rem;
+    border-radius: 4px;
+  }
+  /* 3 */
+  .section-three {
+    background-color: purple;
+    color: rgb(249, 246, 246);
+    padding: 2rem;
+    border-radius: 4px;
+  }
+  /* 4  2col span  and gap */
+  .section-four {
+    background-color: #f2eeee;
+    color: black;
+    padding: 2rem;
+    border-radius: 4px;
+    column-span: 2;
+    gap: 2px;
+  }
+  .col-2 {
+    column-span: 2;
+    gap: 2px;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+  /* 5  3col span and gap*/
+  .section-five {
+    background-color: aliceblue;
+    color: black;
+    padding: 2rem;
+    border-radius: 4px;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    column-span: 3;
+    gap: 2px;
+  }
+  .col-3 {
+    column-span: 3;
+    gap: 2px;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+  /* 6 */
+  .section-sex {
+    background-color: aliceblue;
+    color: black;
+    padding: 2rem;
+    border-radius: 4px;
+    /* grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); */
+    /* column-span: 3; */
+  }
+  .span-2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 2rem;
+    padding: 2px;
+  }
+   /* .span {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 3rem;
+    display: flex;
+    flex-direction: column;
+    display: inline;
+  } */
+  .span {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 3rem;
+  }
+
+  /* Responsive */
+@media (max-width: 576px) {
+    .grid-bg{
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .card {
+      grid-column: span 1;
+    }
+  }
+  /* tablet */
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .grid-bg {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .card {
+      grid-column: span 1;
+    }
+  }
+
+  
+  
+  /* text decoration = use for delete underline */
+  
